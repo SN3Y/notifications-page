@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="output.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Notifications page</title>
+
+</head>
+<body class="font-Jakarta flex w-screen justify-center m-auto md:my-6">
+
+  <article class="grid w-full md:w-6/12 bg-white  md:text-base shadow-md p-4">
+    <div class="flex w-full justify-between text-lg mb-4">
+      <p class="font-bold text-xl">Notifications<span class="contador bg-blue rounded-md text-white px-1 ms-2"></span></p>
+      <button class="text-red hover:text-dark-blue markAllBtn">Mark all as read</button>
+    </div>
+    <ul class="grid gap-2 contenedor">
+
+      <li class="message">
+        <div class="items-center bg-light-blue-1 rounded-md shadow-md py-2">
+          <div class="grid grid-rows-2 cursor-pointer message">
+            <div class="items-center justify-center ps-1 col-span-1 row-span-3 flex gap-2">
+              <img class="h-10" src="assets/images/avatar-mark-webber.webp" alt="avatar-mark-webber">
+              <div class="flex flex-wrap gap-1 md:gap-2 w-full relative h-min row-span-1">
+                <p class="text-start text-nowrap col-span-1">Mark Webber</p>
+                <p class="text-grayish-blue text-start row-span-2">reacted to your recent post</p>
+                <div class="text-dark-gray-blue items-center flex gap-1 col-span-2 row-span-2">My first tournament today!
+                  <div class="flex rounded-full bg-red w-2 h-2 redBtn"></div>
+                </div>
+              </div>
+            </div>
+            <p class="text-grayish-blue ps-12">1m ago</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="message2 items-center bg-light-blue-1 rounded-md shadow-md py-2">
+        <div class="grid grid-rows-2 cursor-pointer message">
+          <div class="items-center justify-center ps-1 col-span-1 row-span-3 flex gap-2">
+            <img class="h-10" src="assets/images/avatar-angela-gray.webp" alt="avatar-angela-gray">
+            <div class="flex flex-wrap gap-1 md:gap-2 w-full relative h-min row-span-1">
+              <p class="text-start text-nowrap col-span-1">Angela Gray</p>
+              <p class="text-grayish-blue text-start row-span-2">followed you</p>
+              <div class="text-dark-gray-blue items-center flex gap-1 col-span-2 row-span-2">
+                <div class="flex rounded-full bg-red w-2 h-2 redBtn2"></div>
+              </div>
+            </div>
+          </div>
+          <p class="text-grayish-blue ps-12">5m ago</p>
+        </div>
+      </li>
+      
+      <li class="message3 items-center bg-light-blue-1 rounded-md shadow-md py-2">
+        <div class="grid grid-rows-2 cursor-pointer">
+          <div class="items-center justify-center ps-1 col-span-1 row-span-3 flex gap-2">
+            <img class="h-10" src="assets/images/avatar-jacob-thompson.webp" alt="avatar-jacob-thompson">
+            <div class="flex flex-wrap gap-1 md:gap-2 w-full relative h-min row-span-1">
+              <p class="text-start text-nowrap col-span-1">Jacob Thompson</p>
+              <p class="text-grayish-blue text-start row-span-2">has joined your group</p>
+              <div class="text-dark-blue font-bold items-center flex gap-1 col-span-2 row-span-2">Chess Club
+                <div class="flex rounded-full bg-red w-2 h-2 redBtn3"></div>
+              </div>
+            </div>
+          </div>
+          <p class="text-grayish-blue ps-12">1day ago</p>
+        </div>
+      </li>      
+
+      <li class="message4 items-center bg-light-blue-1 rounded-md shadow-md py-2">
+        <div class="group grid grid-rows-2 cursor-pointer" tabindex="1">
+          <div class="items-center justify-center ps-1 col-span-1 row-span-3 flex gap-2">
+            <img class="h-10" src="assets/images/avatar-rizky-hasanuddin.webp" alt="avatar-rizky-hasanuddin">
+            <div class="flex flex-wrap gap-1 md:gap-2 w-full h-min row-span-1">
+              <p class="text-start text-nowrap col-span-1 mx-2">Rizky Hasanuddin</p>
+              <p class="text-grayish-blue text-start row-span-2">sent you a private message</p>
+              <div class="text-dark-blue font-bold items-center flex gap-1 col-span-2 row-span-2">
+                <div class="flex rounded-full bg-red w-2 h-2 redBtn4"></div>
+              </div>
+            </div>
+          </div>
+          <p class="text-grayish-blue ps-12">5 days ago</p>
+          <div class="mensaje hidden justify-center p-4 h-auto max-h-0 items-center opacity-0 transition-all 
+          group-focus:block group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000">
+            <p class="text-dark-gray-blue p-1 border-2">
+              Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+              I'm already having lots of fun and improving my game.
+            </p>
+          </div>
+        </div>
+      </li>
+      
+      <li class="message5 items-center bg-light-blue-1 rounded-md shadow-md py-2">
+        <div class="grid grid-rows-2 cursor-pointer relative">
+          <div class="items-center justify-center ps-1 col-span-1 row-span-3 flex gap-2">
+            <img class="h-10" src="assets/images/avatar-kimberly-smith.webp" alt="avatar-kimberly-smith">
+            <div class="flex flex-wrap gap-1 md:gap-2 w-full relative h-min row-span-1">
+              <p class="text-start text-nowrap col-span-1">Kimberly Smith</p>
+              <p class="text-grayish-blue text-start row-span-2">commented on your picture</p>
+              <div class="text-dark-gray-blue items-center h-max flex gap-0 col-span-2 row-span-2">
+                <div class="flex rounded-full bg-red w-2 h-2 redBtn5"></div>
+              </div>
+            </div>
+          </div>
+          <p class="text-grayish-blue ps-12">1 week ago</p>
+          <div class="absolute right-2 top-6 w-1/2 flex justify-end">
+            <img class="h-10 md:absolute md:top-1 md:right-4" src="assets/images/image-chess.webp" alt="image-chess">
+          </div>
+        </div>
+      </li>
+
+
+      <li class="message6 items-center bg-light-blue-1 rounded-md shadow-md py-2">
+        <div class="grid grid-rows-2 cursor-pointer">
+          <div class="items-center justify-center ps-1 col-span-1 row-span-3 flex gap-2">
+            <img class="h-10" src="assets/images/avatar-nathan-peterson.webp" alt="avatar-nathan-peterson">
+            <div class="flex flex-wrap gap-1 md:gap-2 w-full relative h-min row-span-1">
+              <p class="text-start text-nowrap col-span-1">Nathan Petherson</p>
+              <p class="text-grayish-blue text-start row-span-2">reacted to your recent post</p>
+              <div class="text-dark-gray-blue items-center h-max flex gap-1 col-span-2 row-span-2">5 end-game strategies to increase your win rate
+                <div class="flex rounded-full bg-red w-2 h-2 redBtn6"></div>
+              </div>
+            </div>
+          </div>
+          <p class="text-grayish-blue ps-12">2 weeks ago</p>
+        </div>
+      </li>
+
+      <li class="message7 items-center bg-light-blue-1 rounded-md shadow-md py-2">
+        <div class="grid grid-rows-2 cursor-pointer">
+          <div class="items-center justify-center ps-1 col-span-1 row-span-3 flex gap-2">
+            <img class="h-10" src="assets/images/avatar-anna-kim.webp" alt="avatar-anna-kim">
+            <div class="flex flex-wrap gap-1 md:gap-2 w-full relative h-min row-span-1">
+              <p class="text-start text-nowrap col-span-1">Anna Kim</p>
+              <p class="text-grayish-blue text-start row-span-2">left the group </p>
+              <div class="text-dark-gray-blue items-center h-max flex gap-1 col-span-2 row-span-2">Chess Club
+                <div class="flex rounded-full bg-red w-2 h-2 redBtn7"></div>
+              </div>
+            </div>
+          </div>
+          <p class="text-grayish-blue ps-12">2 weeks ago</p>
+        </div>
+      </li>
+      
+    </ul>
+  </article>
+</body>
+<script src="script.js"></script>
+</html>
