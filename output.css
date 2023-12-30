@@ -2610,6 +2610,16 @@ video {
   }
 }
 
+.target\:bg-white:target {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
+}
+
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
 }
@@ -2629,6 +2639,11 @@ video {
   text-align: center;
 }
 
+.focus\:bg-white:focus {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
+}
+
 .focus\:hover\:text-center:hover:focus {
   text-align: center;
 }
@@ -2637,12 +2652,22 @@ video {
   text-align: center;
 }
 
+.focus-visible\:bg-white:focus-visible {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
+}
+
 .group:focus .group-focus\:block {
   display: block;
 }
 
 .group:focus .group-focus\:max-h-screen {
   max-height: 100vh;
+}
+
+.group:focus .group-focus\:bg-white {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
 }
 
 .group:focus .group-focus\:opacity-100 {
